@@ -1,0 +1,4 @@
+SaltConfig
+==========
+
+Some Salt Config
