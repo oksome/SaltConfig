@@ -8,6 +8,14 @@ base:
         - basics
         - local
         - desktop
+        - compile
+
+    'roles:kde':
+        - match: grain
+        - kde
+
+    'roles:developer':
+        - developer
 
     'roles:intercom':
         - match: grain
