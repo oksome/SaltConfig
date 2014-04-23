@@ -20,3 +20,7 @@ base:
     'roles:intercom':
         - match: grain
         - intercom
+
+    'roles:services':
+        - match: grain
+        - chatserver
