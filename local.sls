@@ -5,6 +5,7 @@ PowerManagement:
         - names:
             - pm-utils
             - sudo
+            - lm-sensors
 
 /etc/sudoers.d/power:
     file.managed:

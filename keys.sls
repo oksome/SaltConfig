@@ -1,10 +1,5 @@
 # Basic utilities and config for all systems.
 
-#Deployment:
-#    pkg.installed:
-#        - names:
-#            - vim
-
 /usr/local/share/ca-certificates/OKso_root_CA.crt:
     file.managed:
         - source: salt://keys/root_CA.crt
