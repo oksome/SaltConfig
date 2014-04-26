@@ -3,6 +3,11 @@ base:
         - match: grain
         - basics
 
+    'roles:devserver':
+        - match: grain
+        - basics
+        - compile
+
     'roles:desktop':
         - match: grain
         - basics
