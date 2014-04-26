@@ -1,5 +1,10 @@
 # Basic utilities and config for all systems.
 
+Utils:
+    pkg.installed:
+        - names:
+            - tree
+
 Networking:
     pkg.installed:
         - names:
