@@ -32,3 +32,7 @@ base:
     'roles:services':
         - match: grain
         - chatserver
+
+    'roles:projects':
+        - match: grain
+        - projects
