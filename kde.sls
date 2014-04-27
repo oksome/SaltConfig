@@ -3,3 +3,4 @@ KDE Specific:
         - names:
             - kdeconnect
             - transmission
+            - qmpdclient
