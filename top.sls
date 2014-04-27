@@ -14,13 +14,11 @@ base:
         - local
         - desktop
         - compile
+        - developer
 
     'roles:kde':
         - match: grain
         - kde
-
-    'roles:developer':
-        - developer
 
     'roles:intercom':
         - match: grain
