@@ -8,6 +8,11 @@ base:
         - basics
         - compile
 
+    'roles:musicserver':
+        - match: grain
+        - basics
+        - musicserver
+
     'roles:desktop':
         - match: grain
         - basics
