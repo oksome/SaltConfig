@@ -20,6 +20,7 @@ base:
         - desktop
         - compile
         - developer
+        - crucible
 
     'roles:kde':
         - match: grain
@@ -35,4 +36,4 @@ base:
 
     'roles:projects':
         - match: grain
-        - projects
+        - documents.projects
