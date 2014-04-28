@@ -11,7 +11,7 @@ base:
     'roles:musicserver':
         - match: grain
         - basics
-        - musicserver
+        - private.musicserver
 
     'roles:desktop':
         - match: grain
