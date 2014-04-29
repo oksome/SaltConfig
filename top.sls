@@ -13,6 +13,7 @@ base:
         - basics
         - private.musicserver
 
+    #'id:sulfur':
     'roles:desktop':
         - match: grain
         - basics
@@ -21,6 +22,7 @@ base:
         - compile
         - developer
         - crucible
+        - lxc
 
     'roles:kde':
         - match: grain
@@ -37,3 +39,5 @@ base:
     'roles:projects':
         - match: grain
         - documents.projects
+
+
