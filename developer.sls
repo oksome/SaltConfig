@@ -9,3 +9,17 @@ OpenGL:
             - freeglut3-dev
             - libgles2-mesa-dev
 
+# NodeJS
+
+npm:
+    pkg.installed
+
+bower:
+    npm.installed:
+        - require:
+            - pkg: npm
+
+# Atom.io
+
+libgnome-keyring-dev:
+    pkg.installed

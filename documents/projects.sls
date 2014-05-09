@@ -1,11 +1,43 @@
+# Directories
+
+/home/okso/Documents/Projects:
+    file.directory:
+        - user: okso
+        - group: okso
+        - makedirs: True
+
+/home/okso/Documents/Playground:
+    file.directory:
+        - user: okso
+        - group: okso
+        - makedirs: True
+
 # Clones my main projects into my home directory
 
 git@github.com:oksome/GLycine.git:
+
     git.latest:
         - target: /home/okso/Documents/Projects/Python/GLycine
         - rev: master
         - user: okso
         - submodules: True
+
+    pkg.installed:
+        - name: python-virtualenv
+
+    virtualenv.managed:
+        - name: /home/okso/Documents/Projects/Python/GLycine/venv
+        - path: /home/okso/Documents/Projects/Python/GLycine/venv
+        - user: okso
+        - pip: True
+        - python: /usr/bin/python3
+        - system_site_packages: False
+        - upgrade: False
+
+    pip.installed:
+        - requirements: /home/okso/Documents/Projects/Python/GLycine/requirements.txt
+        - upgrade: False
+        - bin_env: /home/okso/Documents/Projects/Python/GLycine/venv
 
 git@github.com:oksome/Skink.git:
     git.latest:

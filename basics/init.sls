@@ -20,15 +20,23 @@ Deployment:
 
 /home/okso/.vimrc:
     file.managed:
-        - source: salt://etc/vimrc
+        - source: salt://basics/vimrc
+        - mode: 644
+        - user: okso
+        - group: okso
+
+/home/okso/.ssh/config:
+    file.managed:
+        - source: salt://basics/ssh_config
         - mode: 644
         - user: okso
         - group: okso
 
 /root/.vimrc:
     file.managed:
-        - source: salt://etc/vimrc
+        - source: salt://basics/vimrc
         - mode: 644
         - user: root
         - group: root
+
 
